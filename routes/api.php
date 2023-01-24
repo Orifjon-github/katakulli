@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('settings', [HomepageController::class, 'settings']);
 Route::get('categories', [HomepageController::class, 'categories']);
+Route::get('carousels', [HomepageController::class, 'carousels']);
