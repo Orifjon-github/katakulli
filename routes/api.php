@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\SettingsController;
+use App\Http\Controllers\Api\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('settings', [SettingsController::class, 'index']);
+Route::get('settings', [HomepageController::class, 'settings']);
+Route::get('categories', [HomepageController::class, 'categories']);

@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
           LogoSeeder::class,
           PhoneSeeder::class,
           SocialSeeder::class,
+           CategorySeeder::class,
 
        ]);
     }
