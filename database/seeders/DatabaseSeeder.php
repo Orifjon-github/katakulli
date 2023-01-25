@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
           PhoneSeeder::class,
           SocialSeeder::class,
            CategorySeeder::class,
-           CarouselSeeder::class
+           CarouselSeeder::class,
+           ProductSeeder::class,
 
        ]);
     }
