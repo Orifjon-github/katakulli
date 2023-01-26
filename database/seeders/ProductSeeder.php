@@ -18,6 +18,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
            'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
            'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -30,6 +31,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -41,6 +43,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -52,6 +55,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -63,6 +67,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -74,6 +79,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -85,6 +91,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -97,6 +104,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -108,6 +116,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -119,6 +128,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -130,6 +140,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
@@ -141,6 +152,7 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => 'Samsung CS253 Changyutgich',
+            'image' => 'storage/homepage/product.png',
             'discount' => 20,
             'price' => 7896000,
             'amount' => 10,
