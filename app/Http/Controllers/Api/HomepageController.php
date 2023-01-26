@@ -53,17 +53,12 @@ class HomepageController extends Controller
         ]);
     }
     public function special_products() {
-        $products = array();
-        $categories_id = array(1,2,3,4,5,6,7);
-        foreach ($categories_id as $category_id) {
-            $product = SpecialProductResource::collection(Product::where('category_id', $category_id)->get()->random(8));
-            array_push($products, $product);
-        }
+        $categories = SpecialProductResource::collection(Category::all());
         return response()->json([
             'success' => true,
             'code' => 200,
             'message' => 'OK',
-            'data' => $products
+            'data' => $categories
         ]);
     }
 }
