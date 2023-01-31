@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
            SettingSeeder::class,
           LogoSeeder::class,
           PhoneSeeder::class,
+          EmailSeeder::class,
+          AddressSeeder::class,
           SocialSeeder::class,
            CategorySeeder::class,
            CarouselSeeder::class,

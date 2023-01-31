@@ -2,6 +2,8 @@
 
 namespace App\Http\Resources;
 
+use App\Models\Settings\Address;
+use App\Models\Settings\Email;
 use App\Models\Settings\Phone;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -15,11 +17,12 @@ class SettingResource extends JsonResource
      */
     public function toArray($request)
     {
-        $phone = Phone::first()->phone;
         return [
+            'phone' => Phone::first()->phone,
+            'email' => Email::first()->email,
+            'address' => Address::first()->address,
             'logos' => LogoResource::collection($this->logos),
             'socials' => SocialResource::collection($this->socials),
-            'phone' => $phone,
         ];
     }
 }

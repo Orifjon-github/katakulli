@@ -17,6 +17,12 @@ class Setting extends Model
     public function phones():HasMany {
         return $this->hasMany(Phone::class);
     }
+    public function emails():HasMany {
+        return $this->hasMany(Email::class);
+    }
+    public function address():HasMany {
+        return $this->hasMany(Address::class);
+    }
     public function socials():HasMany {
         return $this->hasMany(Social::class);
     }
