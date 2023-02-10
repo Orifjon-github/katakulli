@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('logos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('setting_id')->constrained();
-            $table->string('name');
-            $table->string('file_path')->nullable();
+            $table->string('place')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
         });
     }

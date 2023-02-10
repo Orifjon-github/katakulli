@@ -17,13 +17,13 @@ class LogoSeeder extends Seeder
     {
         Logo::create([
             'setting_id' => 1,
-            'name' => 'Header Logo',
-            'file_path' => 'storage/homepage/header-logo.png'
+            'place' => 'Header Logo',
+            'url' => '/storage/homepage/header-logo.png'
         ]);
         Logo::create([
             'setting_id' => 1,
-            'name' => 'Footer Logo',
-            'file_path' => 'storage/homepage/footer-logo.png'
+            'place' => 'Footer Logo',
+            'url' => 'storage/homepage/footer-logo.png'
         ]);
     }
 }

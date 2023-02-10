@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('setting_id')->constrained();
             $table->string('name');
-            $table->string('link');
+            $table->string('url')->nullable();
+            $table->text('icon');
             $table->timestamps();
         });
     }

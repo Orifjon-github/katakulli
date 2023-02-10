@@ -18,7 +18,8 @@ class SocialSeeder extends Seeder
         Social::create([
             'setting_id' => 1,
             'name' => 'telegram',
-           'link' => 'https://t.me/orifjon_oripov'
+            'url' => 'https://t.me/orifjon_oripov',
+            'icon' => 'svg',
         ]);
     }
 }

@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('addresses', function (Blueprint $table) {
+        Schema::create('single_setting_items', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('setting_id')->constrained();
-            $table->string('address');
+            $table->string('phone');
+            $table->text('address');
+            $table->text('iframe_url');
+            $table->text('partnership_text');
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('addresses');
+        Schema::dropIfExists('single_setting_items');
     }
 };

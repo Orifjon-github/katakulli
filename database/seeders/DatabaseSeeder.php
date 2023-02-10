@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Settings\SingleSettingItem;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,15 +17,13 @@ class DatabaseSeeder extends Seeder
     {
        $this->call([
            SettingSeeder::class,
-          LogoSeeder::class,
-          PhoneSeeder::class,
-          EmailSeeder::class,
-          AddressSeeder::class,
-          SocialSeeder::class,
+           LogoSeeder::class,
+           SingleSettingItemSeeder::class,
+           AdvantageSeeder::class,
+           SocialSeeder::class,
            CategorySeeder::class,
            CarouselSeeder::class,
            ProductSeeder::class,
-
        ]);
     }
 }

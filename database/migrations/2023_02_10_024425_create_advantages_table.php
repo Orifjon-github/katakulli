@@ -13,10 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('emails', function (Blueprint $table) {
+        Schema::create('advantages', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('setting_id')->constrained();
-            $table->string('email');
+            $table->tinyInteger('num');
+            $table->string('title');
+            $table->text('url');
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('emails');
+        Schema::dropIfExists('advantages');
     }
 };
