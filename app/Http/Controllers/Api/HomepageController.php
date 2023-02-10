@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\AdditionalProductResource;
 use App\Http\Resources\CarouselResource;
 use App\Http\Resources\CategoryResource;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\SettingResource;
 use App\Http\Resources\SpecialProductResource;
 use App\Http\Resources\TestimonialResource;
+use App\Models\AdditionalProduct;
 use App\Models\Carousel;
 use App\Models\Category;
 use App\Models\Product;
@@ -47,6 +49,16 @@ class HomepageController extends Controller
             'code' => 200,
             'message' => 'OK',
             'data' => $products
+        ]);
+    }
+    public function additionalProducts(): JsonResponse
+    {
+        $additional_products = AdditionalProductResource::collection(AdditionalProduct::all());
+        return response()->json([
+            'success' => true,
+            'code' => 200,
+            'message' => 'OK',
+            'data' => $additional_products
         ]);
     }
     public function carousels(): JsonResponse
