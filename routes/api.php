@@ -23,5 +23,6 @@ Route::get('settings', [HomepageController::class, 'settings']);
 Route::get('carousels', [HomepageController::class, 'carousels']);
 Route::get('categories', [HomepageController::class, 'categories']);
 Route::get('products', [HomepageController::class, 'products']);
-Route::get('popular-products', [HomepageController::class, 'popular_products']);
-Route::get('special-products', [HomepageController::class, 'special_products']);
+Route::get('additional-products', [HomepageController::class, 'additionalProducts']);
+Route::get('popular-recipes', [HomepageController::class, 'popularRecipes']);
+Route::get('testimonials', [HomepageController::class, 'testimonials']);

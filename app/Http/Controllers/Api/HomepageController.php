@@ -8,10 +8,12 @@ use App\Http\Resources\CategoryResource;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\SettingResource;
 use App\Http\Resources\SpecialProductResource;
+use App\Http\Resources\TestimonialResource;
 use App\Models\Carousel;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Settings\Setting;
+use App\Models\Testimonial;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -57,9 +59,9 @@ class HomepageController extends Controller
             'data' => $carousels
         ]);
     }
-    public function popular_products(): JsonResponse
+    public function popularRecipes(): JsonResponse
     {
-        $products = ProductResource::collection(Product::all()->random(8));
+        $products = ProductResource::collection(Product::all()->random(5));
         return response()->json([
             'success' => true,
             'code' => 200,
@@ -67,14 +69,14 @@ class HomepageController extends Controller
             'data' => $products
         ]);
     }
-    public function special_products(): JsonResponse
+    public function testimonials(): JsonResponse
     {
-        $categories = SpecialProductResource::collection(Category::all());
+        $testimonials = TestimonialResource::collection(Testimonial::all()->random(3));
         return response()->json([
             'success' => true,
             'code' => 200,
             'message' => 'OK',
-            'data' => $categories
+            'data' => $testimonials
         ]);
     }
 }
