@@ -16,12 +16,15 @@ class ProductResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'category_id' => $this->category_id,
             'name' => $this->name,
-            'image' => $this->image,
-            'discount' => $this->discount,
-            'price' => $this->price,
-            'amount' => $this->amount,
-            'credit' => [response()->json(['credit_duration' => $this->credit_duration, 'credit_monthly_payment' => $this->credit_monthly_payment])->getData()]
-        ];
+            'description' => $this->description,
+            'time' => $this->time,
+            'count' => $this->count,
+            'price_small' => $this->price_small,
+            'price_medium' => $this->price_medium,
+            'price_large' => $this->price_large,
+            'sub_title' => $this->sub_title
+            ];
     }
 }

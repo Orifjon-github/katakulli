@@ -23,7 +23,7 @@ class LogoSeeder extends Seeder
         Logo::create([
             'setting_id' => 1,
             'place' => 'Footer Logo',
-            'url' => 'storage/homepage/footer-logo.png'
+            'url' => '/storage/homepage/footer-logo.png'
         ]);
     }
 }

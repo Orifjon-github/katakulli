@@ -16,32 +16,21 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'Maishiy texnika',
-            'file_url' => 'path'
+            'name' => 'Pizza',
+            'url' => 'path'
         ]);
         Category::create([
-            'name' => 'Avtomobil uchun mahsulotlar',
-            'file_url' => 'path'
+            'name' => 'Burgers',
+            'url' => 'path'
         ]);
         Category::create([
-            'name' => 'Telefonlar va gadjetlar',
-            'file_url' => 'path'
+            'name' => 'Doners',
+            'url' => 'path'
         ]);
         Category::create([
-            'name' => 'Kompyuter texnikasi',
-            'file_url' => 'path'
+            'name' => 'Vegetarian & Salad',
+            'url' => 'path'
         ]);
-        Category::create([
-            'name' => "Sport va sevimli mashg'ulot",
-            'file_url' => 'path'
-        ]);
-        Category::create([
-            'name' => 'Bolalar uchun mahsulotlar',
-            'file_url' => 'path'
-        ]);
-        Category::create([
-            'name' => "Go'zallik va salomatlik",
-            'file_url' => 'path'
-        ]);
+
     }
 }

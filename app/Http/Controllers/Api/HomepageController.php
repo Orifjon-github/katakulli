@@ -12,11 +12,13 @@ use App\Models\Carousel;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Settings\Setting;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
-    public function settings() {
+    public function settings(): JsonResponse
+    {
         $settings = new SettingResource(Setting::first());
         return response()->json([
            'success' => true,
@@ -25,7 +27,8 @@ class HomepageController extends Controller
            'data' => $settings
         ]);
     }
-    public function categories() {
+    public function categories(): JsonResponse
+    {
         $categories = CategoryResource::collection(Category::all());
         return response()->json([
             'success' => true,
@@ -34,7 +37,18 @@ class HomepageController extends Controller
             'data' => $categories
         ]);
     }
-    public function carousels() {
+    public function products(): JsonResponse
+    {
+        $products = ProductResource::collection(Product::all());
+        return response()->json([
+            'success' => true,
+            'code' => 200,
+            'message' => 'OK',
+            'data' => $products
+        ]);
+    }
+    public function carousels(): JsonResponse
+    {
         $carousels = CarouselResource::collection(Carousel::all());
         return response()->json([
             'success' => true,
@@ -43,7 +57,8 @@ class HomepageController extends Controller
             'data' => $carousels
         ]);
     }
-    public function popular_products() {
+    public function popular_products(): JsonResponse
+    {
         $products = ProductResource::collection(Product::all()->random(8));
         return response()->json([
             'success' => true,
@@ -52,7 +67,8 @@ class HomepageController extends Controller
             'data' => $products
         ]);
     }
-    public function special_products() {
+    public function special_products(): JsonResponse
+    {
         $categories = SpecialProductResource::collection(Category::all());
         return response()->json([
             'success' => true,

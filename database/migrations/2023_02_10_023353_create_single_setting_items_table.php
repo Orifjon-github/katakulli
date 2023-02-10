@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('single_setting_items', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('setting_id')->constrained();
             $table->string('phone');
             $table->text('address');
             $table->text('iframe_url');

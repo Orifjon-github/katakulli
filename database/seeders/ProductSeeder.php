@@ -15,12 +15,29 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        Product::factory(15)->create();
-        Product::factory(15)->create(['category_id' => 2]);
-        Product::factory(15)->create(['category_id' => 3]);
-        Product::factory(15)->create(['category_id' => 4]);
-        Product::factory(15)->create(['category_id' => 5]);
-        Product::factory(15)->create(['category_id' => 6]);
-        Product::factory(15)->create(['category_id' => 7]);
+        Product::create([
+            'category_id' => 1,
+            'name' => 'Venise Pizza',
+            'description' => 'description',
+            'image' => 'Example image',
+            'price_small' => 5,
+            'price_medium' => 7,
+            'price_large' => 10,
+            'count' => 0,
+            'time' => 32,
+            'sub_title' => 'popular'
+        ]);
+        Product::create([
+            'category_id' => 2,
+            'name' => 'Venise Pizza',
+            'description' => 'description',
+            'image' => 'Example image',
+            'price_small' => 5,
+            'price_medium' => 7,
+            'price_large' => 10,
+            'count' => 0,
+            'time' => 32,
+            'sub_title' => null
+        ]);
     }
 }

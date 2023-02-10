@@ -20,7 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('settings', [HomepageController::class, 'settings']);
-Route::get('categories', [HomepageController::class, 'categories']);
 Route::get('carousels', [HomepageController::class, 'carousels']);
+Route::get('categories', [HomepageController::class, 'categories']);
+Route::get('products', [HomepageController::class, 'products']);
 Route::get('popular-products', [HomepageController::class, 'popular_products']);
 Route::get('special-products', [HomepageController::class, 'special_products']);

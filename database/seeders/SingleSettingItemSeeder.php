@@ -15,6 +15,7 @@ class SingleSettingItemSeeder extends Seeder
     public function run()
     {
         SingleSettingItem::create([
+            'setting_id' => 1,
             'phone' => '+998908319755',
             'address' => 'Wolverhampton, Charles II, Street 47',
             'iframe_url' => 'example iframe_url',

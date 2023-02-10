@@ -17,13 +17,14 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('name');
+            $table->text('description')->nullable();
             $table->text('image')->nullable();
-            $table->tinyInteger('discount')->nullable();
-            $table->bigInteger('price');
-            $table->smallInteger('amount');
-            $table->smallInteger('credit_duration');
-            $table->bigInteger('credit_monthly_payment');
-            $table->text('content');
+            $table->float('price_small')->nullable();
+            $table->float('price_medium')->nullable();
+            $table->float('price_large')->nullable();
+            $table->smallInteger('count')->default(0);
+            $table->smallInteger('time')->nullable();
+            $table->string('sub_title')->nullable();
             $table->timestamps();
         });
     }

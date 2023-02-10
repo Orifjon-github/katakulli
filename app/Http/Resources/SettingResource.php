@@ -3,8 +3,10 @@
 namespace App\Http\Resources;
 
 use App\Models\Settings\Address;
+use App\Models\Settings\Advantage;
 use App\Models\Settings\Email;
 use App\Models\Settings\Phone;
+use App\Models\Settings\SingleSettingItem;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class SettingResource extends JsonResource
@@ -18,11 +20,13 @@ class SettingResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'phone' => Phone::first()->phone,
-            'email' => Email::first()->email,
-            'address' => Address::first()->address,
+            'phone' => $this->singleSettingItems->phone,
+            'address' => $this->singleSettingItems->address,
+            'iframe_url' => $this->singleSettingItems->iframe_url,
+            'partnership_text' => $this->singleSettingItems->partnership_text,
             'logos' => LogoResource::collection($this->logos),
             'socials' => SocialResource::collection($this->socials),
+            'advantages' => AdvantageResource::collection($this->advantages),
         ];
     }
 }

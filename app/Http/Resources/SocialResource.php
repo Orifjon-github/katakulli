@@ -17,7 +17,8 @@ class SocialResource extends JsonResource
         return [
             'id' => $this->id,
             'social' => $this->name,
-            'link' => $this->link,
+            'url' => $this->url,
+            'icon' => $this->icon,
         ];
     }
 }
