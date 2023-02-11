@@ -16,8 +16,8 @@ class SingleSettingItemSeeder extends Seeder
     {
         SingleSettingItem::create([
             'setting_id' => 1,
-            'phone' => '+998908319755',
-            'address' => 'Wolverhampton, Charles II, Street 47',
+            'phone' => '020 7610 2222',
+            'address' => '3 Charleville Rd, London W14 9JL',
             'map' => 'https://goo.gl/maps/FLjCp3AoN5Nbh8VV6',
             'iframe_url' => 'https://youtu.be/sv3TXMSv6Lw',
             'image' => '/storage/homepage/setting/setting-image.png',

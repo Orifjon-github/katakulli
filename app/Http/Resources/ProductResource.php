@@ -25,7 +25,8 @@ class ProductResource extends JsonResource
             'price_small' => $this->price_small,
             'price_medium' => $this->price_medium,
             'price_large' => $this->price_large,
-            'sub_title' => $this->sub_title
+            'sub_title' => $this->sub_title,
+            'sizes' => SizeResource::collection($this->sizes),
             ];
     }
 }
