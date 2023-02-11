@@ -18,12 +18,12 @@ class LogoSeeder extends Seeder
         Logo::create([
             'setting_id' => 1,
             'place' => 'Header Logo',
-            'url' => '/storage/homepage/header-logo.png'
+            'url' => '/storage/homepage/setting/venice-logo.png'
         ]);
         Logo::create([
             'setting_id' => 1,
             'place' => 'Footer Logo',
-            'url' => '/storage/homepage/footer-logo.png'
+            'url' => '/storage/homepage/setting/venice-logo.png'
         ]);
     }
 }

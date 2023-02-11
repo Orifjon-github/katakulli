@@ -18,22 +18,22 @@ class AdditionalProductSeeder extends Seeder
         AdditionalProduct::create([
            'name' => 'Ketchup',
            'price' => 2.99,
-           'image' => 'Example Image'
+           'image' => '/storage/products/ketchup.png'
         ]);
         AdditionalProduct::create([
            'name' => 'Mayonez',
            'price' => 3.99,
-           'image' => 'Example Image'
+           'image' => '/storage/products/ketchup.png'
         ]);
         AdditionalProduct::create([
            'name' => 'Ketchup',
            'price' => 2.99,
-           'image' => 'Example Image'
+           'image' => '/storage/products/ketchup.png'
         ]);
         AdditionalProduct::create([
            'name' => 'Ketchup',
            'price' => 2.99,
-           'image' => 'Example Image'
+           'image' => '/storage/products/ketchup.png'
         ]);
     }
 }

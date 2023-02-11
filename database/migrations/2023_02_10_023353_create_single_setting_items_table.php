@@ -18,7 +18,9 @@ return new class extends Migration
             $table->foreignId('setting_id')->constrained();
             $table->string('phone');
             $table->text('address');
+            $table->text('map');
             $table->text('iframe_url');
+            $table->text('image');
             $table->text('partnership_text');
             $table->timestamps();
         });

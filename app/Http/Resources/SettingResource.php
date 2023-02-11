@@ -22,6 +22,7 @@ class SettingResource extends JsonResource
         return [
             'phone' => $this->singleSettingItems->phone,
             'address' => $this->singleSettingItems->address,
+            'map' => $this->singleSettingItems->map,
             'iframe_url' => $this->singleSettingItems->iframe_url,
             'partnership_text' => $this->singleSettingItems->partnership_text,
             'logos' => LogoResource::collection($this->logos),

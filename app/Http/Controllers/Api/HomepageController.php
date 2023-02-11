@@ -51,6 +51,18 @@ class HomepageController extends Controller
             'data' => $products
         ]);
     }
+
+    public function showCategory($id): JsonResponse
+    {
+        $products = ProductResource::collection(Category::find($id)->products);
+        return response()->json([
+            'success' => true,
+            'code' => 200,
+            'message' => 'OK',
+            'data' => $products
+        ]);
+    }
+
     public function additionalProducts(): JsonResponse
     {
         $additional_products = AdditionalProductResource::collection(AdditionalProduct::all());

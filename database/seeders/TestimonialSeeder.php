@@ -19,19 +19,19 @@ class TestimonialSeeder extends Seeder
            'name' => 'Orifjon Oripov',
            'body' => 'Juda ham zo\'r',
             'rating' => 5,
-            'image' => 'Example Image'
+            'image' => '/storage/homepage/users/user-1.png'
         ]);
         Testimonial::create([
             'name' => 'Orifjon Oripov',
             'body' => 'Juda ham zo\'r',
             'rating' => 5,
-            'image' => 'Example Image'
+            'image' => '/storage/homepage/users/user-1.png'
         ]);
         Testimonial::create([
             'name' => 'Orifjon Oripov',
             'body' => 'Juda ham zo\'r',
             'rating' => 5,
-            'image' => 'Example Image'
+            'image' => '/storage/homepage/users/user-1.png'
         ]);
     }
 }

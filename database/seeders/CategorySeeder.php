@@ -17,19 +17,19 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => 'Pizza',
-            'url' => 'path'
+            'url' => '/storage/homepage/categories/pizza.svg'
         ]);
         Category::create([
             'name' => 'Burgers',
-            'url' => 'path'
+            'url' => '/storage/homepage/categories/burger.svg'
         ]);
         Category::create([
             'name' => 'Doners',
-            'url' => 'path'
+            'url' => '/storage/homepage/categories/doner.svg'
         ]);
         Category::create([
             'name' => 'Vegetarian & Salad',
-            'url' => 'path'
+            'url' => '/storage/homepage/categories/vegetarian.svg'
         ]);
 
     }

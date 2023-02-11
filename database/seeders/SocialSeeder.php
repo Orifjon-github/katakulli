@@ -19,7 +19,25 @@ class SocialSeeder extends Seeder
             'setting_id' => 1,
             'name' => 'telegram',
             'url' => 'https://t.me/orifjon_oripov',
-            'icon' => 'svg',
+            'icon' => '/storage/homepage/setting/telegram.svg',
+        ]);
+        Social::create([
+            'setting_id' => 1,
+            'name' => 'facebook',
+            'url' => 'https://t.me/orifjon_oripov',
+            'icon' => '/storage/homepage/setting/facebook.svg',
+        ]);
+        Social::create([
+            'setting_id' => 1,
+            'name' => 'twitter',
+            'url' => 'https://t.me/orifjon_oripov',
+            'icon' => '/storage/homepage/setting/twitter.svg',
+        ]);
+        Social::create([
+            'setting_id' => 1,
+            'name' => 'instagram',
+            'url' => 'https://t.me/orifjon_oripov',
+            'icon' => '/storage/homepage/setting/instagram.svg',
         ]);
     }
 }

@@ -19,7 +19,7 @@ class ProductSeeder extends Seeder
             'category_id' => 1,
             'name' => 'Venise Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -31,7 +31,7 @@ class ProductSeeder extends Seeder
             'category_id' => 2,
             'name' => 'Venise Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -43,7 +43,7 @@ class ProductSeeder extends Seeder
             'category_id' => 2,
             'name' => 'Venise Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -55,7 +55,7 @@ class ProductSeeder extends Seeder
             'category_id' => 2,
             'name' => 'Venise Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -65,7 +65,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => 'Venise Pizza',
+            'name' => '/storage/products/product-1.png',
             'description' => 'description',
             'image' => 'Example image',
             'price_small' => 5,
@@ -77,7 +77,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => 'Venise Pizza',
+            'name' => '/storage/products/product-1.png',
             'description' => 'description',
             'image' => 'Example image',
             'price_small' => 5,
@@ -89,7 +89,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => 'Venise Pizza',
+            'name' => '/storage/products/product-1.png',
             'description' => 'description',
             'image' => 'Example image',
             'price_small' => 5,
@@ -101,7 +101,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => 'Venise Pizza',
+            'name' => '/storage/products/product-1.png',
             'description' => 'description',
             'image' => 'Example image',
             'price_small' => 5,

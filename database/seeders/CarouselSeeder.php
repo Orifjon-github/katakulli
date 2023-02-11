@@ -17,17 +17,17 @@ class CarouselSeeder extends Seeder
     {
         Carousel::create([
             'title' => "Example Title",
-            'image' => "Example Image",
+            'image' => "/storage/homepage/banner/banner-1.png",
             'price' => 5.05,
         ]);
         Carousel::create([
             'title' => "Example Title",
-            'image' => "Example Image",
+            'image' => "/storage/homepage/banner/banner-1.png",
             'price' => 4.45,
         ]);
         Carousel::create([
             'title' => "Example Title",
-            'image' => "Example Image",
+            'image' => "/storage/homepage/banner/banner-1.png",
             'price' => 8.15,
         ]);
     }
