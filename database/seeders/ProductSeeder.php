@@ -65,9 +65,9 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => '/storage/products/product-1.png',
+            'name' => 'Venice Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -77,9 +77,9 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => '/storage/products/product-1.png',
+            'name' => 'Venice Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -89,9 +89,9 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => '/storage/products/product-1.png',
+            'name' => 'Venice Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
@@ -101,9 +101,9 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'category_id' => 2,
-            'name' => '/storage/products/product-1.png',
+            'name' => 'Venice Pizza',
             'description' => 'description',
-            'image' => 'Example image',
+            'image' => '/storage/products/product-1.png',
             'price_small' => 5,
             'price_medium' => 7,
             'price_large' => 10,
