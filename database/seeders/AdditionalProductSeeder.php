@@ -30,10 +30,5 @@ class AdditionalProductSeeder extends Seeder
            'price' => 2.99,
            'image' => '/storage/products/ketchup.png'
         ]);
-        AdditionalProduct::create([
-           'name' => 'Ketchup',
-           'price' => 2.99,
-           'image' => '/storage/products/ketchup.png'
-        ]);
     }
 }
