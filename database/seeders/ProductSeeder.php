@@ -21,7 +21,7 @@ class ProductSeeder extends Seeder
                 'name' => 'Venice Pizza',
                 'description' => 'description',
                 'image' => '/storage/products/product-1.png',
-                'size' => serialize([["name" => "Small", "size" => 25, "price" => 5.55], ["name" => "medium","size" => 45, "price" => 9.55], ["name" => "large", "size" => 75, "price" => 12.55]]),
+                'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
                 'count' => 0,
                 'time' => 32,
                 'sub_title' => 'popular'
@@ -34,8 +34,8 @@ class ProductSeeder extends Seeder
                 'name' => 'Venice Pizza',
                 'description' => 'description',
                 'image' => '/storage/products/product-1.png',
-                'size' => serialize([["name" => "Small", "size" => 25, "price" => 5.55], ["name" => "medium","size" => 45, "price" => 9.55], ["name" => "large", "size" => 75, "price" => 12.55]]),
-                'count' => 0,
+               'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
+               'count' => 0,
                 'time' => 32,
                 'sub_title' => 'popular'
             ]);
@@ -47,7 +47,7 @@ class ProductSeeder extends Seeder
                 'name' => 'Venice Pizza',
                 'description' => 'description',
                 'image' => '/storage/products/product-1.png',
-                'size' => serialize([["name" => "Small", "size" => 25, "price" => 5.55], ["name" => "medium","size" => 45, "price" => 9.55], ["name" => "large", "size" => 75, "price" => 12.55]]),
+               'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
                 'count' => 0,
                 'time' => 32,
                 'sub_title' => 'popular'
