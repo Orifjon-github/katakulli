@@ -22,11 +22,9 @@ class ProductResource extends JsonResource
             'description' => $this->description,
             'time' => $this->time,
             'count' => $this->count,
-            'price_small' => $this->price_small,
-            'price_medium' => $this->price_medium,
-            'price_large' => $this->price_large,
+            'sizes' => unserialize($this->size),
             'sub_title' => $this->sub_title,
-            'sizes' => SizeResource::collection($this->sizes),
+//            'sizes' => SizeResource::collection($this->sizes),
             ];
     }
 }
