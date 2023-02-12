@@ -23,7 +23,9 @@ class DatabaseSeeder extends Seeder
            SocialSeeder::class,
            CategorySeeder::class,
            CarouselSeeder::class,
+           SizeSeeder::class,
            ProductSeeder::class,
+           SpecialSeeder::class,
            TestimonialSeeder::class,
            AdditionalProductSeeder::class,
        ]);
