@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text('iframe_url');
             $table->text('image');
             $table->text('partnership_text');
+            $table->tinyInteger('discount');
+            $table->smallInteger('delivery_price');
             $table->timestamps();
         });
     }

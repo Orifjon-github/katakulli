@@ -24,6 +24,8 @@ class SingleSettingItemSeeder extends Seeder
             'partnership_text' => 'Please fill out all the required fields in this form. Be as detailed as possible when describing your organization and what type of partnership you are seeking.
 After filling out all the required fields, click the "Submit" button to send your Partnership Request Form to our team for review.
 Disclaimer: Your submission of this form does not guarantee that a partnership will be established. Our team will review all submissions and reach out to you if there is a potential opportunity for partnership.',
-        ]);
+            'discount' => 10,
+            'delivery_price' => 5
+            ]);
     }
 }

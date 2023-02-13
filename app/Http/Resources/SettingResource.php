@@ -25,6 +25,8 @@ class SettingResource extends JsonResource
             'map' => $this->singleSettingItems->map,
             'iframe_url' => $this->singleSettingItems->iframe_url,
             'partnership_text' => $this->singleSettingItems->partnership_text,
+            'discount' => $this->singleSettingItems->discount,
+            'delivery_price' => $this->singleSettingItems->delivery_price,
             'logos' => LogoResource::collection($this->logos),
             'socials' => SocialResource::collection($this->socials),
             'advantages' => AdvantageResource::collection($this->advantages),
