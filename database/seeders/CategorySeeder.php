@@ -31,6 +31,10 @@ class CategorySeeder extends Seeder
             'name' => 'Vegetarian & Salad',
             'url' => '/storage/homepage/categories/vegetarian.svg'
         ]);
+        Category::create([
+            'name' => 'Sous',
+            'url' => '/storage/homepage/categories/vegetarian.svg'
+        ]);
 
     }
 }

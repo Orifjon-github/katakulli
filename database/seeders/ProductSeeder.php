@@ -66,6 +66,18 @@ class ProductSeeder extends Seeder
                 'sub_title' => 'popular'
             ]);
         }
+        for ($i = 0; $i < 5; $i++) {
+            Product::create([
+                'category_id' => 5,
+                'name' => 'Ketchup',
+                'description' => 'description',
+                'image' => '/storage/products/ketchup.png',
+                'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
+                'count' => 0,
+                'time' => 32,
+                'sub_title' => 'popular'
+            ]);
+        }
 
     }
 }
