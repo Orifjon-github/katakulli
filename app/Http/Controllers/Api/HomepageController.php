@@ -23,10 +23,7 @@ use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
-    function test() {
-        $img =  'https://xsgames.co/randomusers/avatar.php?g=male';
-        return $img;
-    }
+
     public function settings(): JsonResponse
     {
         $settings = new SettingResource(Setting::first());

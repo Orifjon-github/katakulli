@@ -29,13 +29,13 @@ Vegetarian options: Vegetarian Pizza',
             'name' => "Anca Pertu",
             'body' => 'Friendly staff, fast service and amazing pizza, ordered once and kept coming back. Highly recommend! 💕',
             'rating' => 5,
-            'image' => 'https://xsgames.co/randomusers/avatar.php?g=male'
+            'image' => '/storage/homepage/users/user-1.png'
         ]);
         Testimonial::create([
             'name' => "Elenora Zeneli",
             'body' => 'Amazing good pizzas for a good price as well! Very friendly too, def recommend!',
             'rating' => 5,
-            'image' => 'https://xsgames.co/randomusers/avatar.php?g=male'
+            'image' => '/storage/homepage/users/user-1.png'
         ]);
         Testimonial::create([
             'name' => "Edvin",
