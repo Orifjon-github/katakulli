@@ -97,7 +97,7 @@ class HomepageController extends Controller
     }
     public function popularRecipes(): JsonResponse
     {
-        $products = ProductResource::collection(Product::where("sub_title", "popular")->get()->random(5));
+        $products = ProductResource::collection(Product::where("sub_title", "popular")->where("category_id", "<>", 5)->get()->random(5));
         return response()->json([
             'success' => true,
             'code' => 200,
