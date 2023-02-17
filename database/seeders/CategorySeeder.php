@@ -33,7 +33,7 @@ class CategorySeeder extends Seeder
         ]);
         Category::create([
             'name' => 'Sous',
-            'url' => '/storage/homepage/categories/vegetarian.svg'
+            'url' => '/storage/homepage/categories/sous.png'
         ]);
 
     }
