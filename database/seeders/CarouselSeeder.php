@@ -16,17 +16,17 @@ class CarouselSeeder extends Seeder
     public function run()
     {
         Carousel::create([
-            'title' => "Pepperoni Lover Pizza from £7.99 For Collection",
+            'title' => "Pepperoni Lover Pizza For Collection",
             'image' => "/storage/products/product-1.png",
             'price' => 7.99,
         ]);
         Carousel::create([
-            'title' => "Sausage and Pepperoni Pizza from £7.99 For Collection",
+            'title' => "Sausage and Pepperoni Pizza For Collection",
             'image' => "/storage/products/product-1.png",
             'price' => 7.99,
         ]);
         Carousel::create([
-            'title' => "Veggie Lover Pizza from £7.99 For Collection",
+            'title' => "Veggie Lover Pizza For Collection",
             'image' => "/storage/products/product-1.png",
             'price' => 7.99,
         ]);
