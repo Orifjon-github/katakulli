@@ -20,31 +20,23 @@ class CategorySeeder extends Seeder
             'url' => '/storage/homepage/categories/pizza.svg'
         ]);
         Category::create([
-            'name' => 'Burgers',
-            'url' => '/storage/homepage/categories/burger.svg'
-        ]);
-        Category::create([
             'name' => 'Lasagna',
             'url' => '/storage/homepage/categories/lasagna.png'
         ]);
-//        Category::create([
-//            'name' => 'Make it better',
-//            'url' => '/storage/homepage/categories/better.png'
-//        ]);
         Category::create([
-            'name' => 'Doners',
-            'url' => '/storage/homepage/categories/doner.svg'
+            'name' => 'Make it better',
+            'url' => '/storage/homepage/categories/pizza.svg'
         ]);
         Category::create([
-            'name' => 'Vegetarian & Salads',
+            'name' => 'Salad',
             'url' => '/storage/homepage/categories/vegetarian.svg'
         ]);
         Category::create([
-            'name' => 'Sauces',
+            'name' => 'Sauce',
             'url' => '/storage/homepage/categories/sous.png'
         ]);
         Category::create([
-            'name' => 'Drinks',
+            'name' => 'Drink',
             'url' => '/storage/homepage/categories/drink.png'
         ]);
 

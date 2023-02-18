@@ -58,56 +58,91 @@ class ProductSeeder extends Seeder
             ]);
         }
 
-//        for ($i = 0; $i < 5; $i++) {
-//           Product::create([
-//                'category_id' => 2,
-//                'name' => 'Venice Pizza',
-//                'description' => 'description',
-//                'image' => '/storage/products/product-1.png',
-//               'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
-//               'count' => 0,
-//                'time' => 32,
-//                'sub_title' => 'popular'
-//            ]);
-//        }
-//
-//        for ($i = 0; $i < 5; $i++) {
-//           Product::create([
-//                'category_id' => 3,
-//                'name' => 'Venice Pizza',
-//                'description' => 'description',
-//                'image' => '/storage/products/product-1.png',
-//               'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
-//                'count' => 0,
-//                'time' => 32,
-//                'sub_title' => 'popular'
-//            ]);
-//        }
-//
-//        for ($i = 0; $i < 5; $i++) {
-//            Product::create([
-//                'category_id' => 4,
-//                'name' => 'Venice Pizza',
-//                'description' => 'description',
-//                'image' => '/storage/products/product-1.png',
-//                'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
-//                'count' => 0,
-//                'time' => 32,
-//                'sub_title' => 'popular'
-//            ]);
-//        }
-//        for ($i = 0; $i < 5; $i++) {
-//            Product::create([
-//                'category_id' => 5,
-//                'name' => 'Ketchup',
-//                'description' => 'description',
-//                'image' => '/storage/products/ketchup.png',
-//                'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
-//                'count' => 0,
-//                'time' => 32,
-//                'sub_title' => 'popular'
-//            ]);
-//        }
+        $lasagnas = [
+            ["name" => "Vegetarian Lasagna", "price" => 7.99],
+            ["name" => "Beef Lasagna", "price" => 7.99],
+            ["name" => "Spaghetti Bolognese", "price" => 7.99],
+            ["name" => "Chicken Mushroom Pasta", "price" => 7.99]
+        ];
+
+        foreach ($lasagnas as $lasagna) {
+           Product::create([
+                'category_id' => 2,
+                'name' => 'Venice Pizza',
+                'description' => 'description',
+                'image' => '/storage/products/product-1.png',
+               'size' => $lasagna["price"] ?? null,
+                'count' => 0,
+                'time' => 32,
+                'sub_title' => 'popular'
+            ]);
+        }
+
+        $betters = [
+            ["name" => "Cheesy Jalapeno Bites", "description" => "Breaded jalapeno and cheese 6pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Garlic Bread", "description" => "4pcs", "price" => serialize(["price" => 1.99])],
+            ["name" => "Garlic Bread with Cheese", "description" => "4pcs", "price" => serialize(["price" => 2.99])],
+            ["name" => "Cheesy Garlic Pizza Bread", "description" => "Topped with mozzarella, garlic, and butter sauce", "price" => serialize(["price" => 2.99])],
+            ["name" => "Bbq Chicken Wings", "description" => "8pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Large Portion of Chips", "description" => "", "price" => serialize(["price" => 1.99])],
+            ["name" => "Chilli Cheesy Bites", "description" => "8pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Hot Wings", "description" => "8pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Potato Wedges", "description" => "", "price" => serialize(["price" => 3.99])],
+            ["name" => "Curly Fries", "description" => "", "price" => serialize(["price" => 3.99])],
+            ["name" => "Onion Rings", "description" => "10pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Garlic Mushrooms", "description" => "10pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Mozzarella Sticks", "description" => "8pcs", "price" => serialize(["price" => 3.99])],
+            ["name" => "Chicken Strips", "description" => "6pcs", "price" => serialize(["price" => 4.99])],
+            ["name" => "Bbq Lamb Ribs", "description" => "", "price" => serialize(["price" => 5.99])],
+            ["name" => "Chicken nuggets", "description" => "10pcs", "price" => serialize(["price" => 3.99])],
+        ];
+
+        foreach ($betters as $better) {
+            Product::create([
+                'category_id' => 3,
+                'name' => $better['name'] ?? "Make it Better",
+                'description' => $better["description"] ?? null,
+                'image' => '/storage/products/product-1.png',
+                'size' => $better["price"] ?? null,
+                'count' => 0,
+                'time' => 32,
+                'sub_title' => null
+            ]);
+        }
+
+        $salads = [
+            ["name" => "Mixed Salad", "price" => serialize(["price" => 2.99])],
+            ["name" => "Potato Salad", "price" => serialize(["price" => 2.99])],
+            ["name" => "Coleslaw", "price" => serialize(["price" => 1.99])],
+            ["name" => "Mixed Salad with Tuna", "price" => serialize(["price" => 2.99])],
+            ["name" => "Mixed Salad with Ham", "price" => serialize(["price" => 2.99])],
+            ["name" => "Mixed Salad with Feta and Olive Oil", "price" => serialize(["price" => 2.99])],
+        ];
+
+        foreach ($salads as $salad) {
+            Product::create([
+                'category_id' => 4,
+                'name' => $salad["name"] ?? "Salad",
+                'description' => null,
+                'image' => '/storage/products/product-1.png',
+                'size' => $salad["price"] ?? null,
+                'count' => 0,
+                'time' => 32,
+                'sub_title' => null
+            ]);
+        }
+        for ($i = 0; $i < 5; $i++) {
+            Product::create([
+                'category_id' => 5,
+                'name' => 'Ketchup',
+                'description' => 'description',
+                'image' => '/storage/products/ketchup.png',
+                'size' => serialize([["id" => 1, "name" => "Small", "size" => 25, "price" => 5.55], ["id" => 2, "name" => "medium","size" => 45, "price" => 9.55], ["id" => 3, "name" => "large", "size" => 75, "price" => 12.55]]),
+                'count' => 0,
+                'time' => 32,
+                'sub_title' => null
+            ]);
+        }
 
         $drinks = [
             ["name" => "Coke", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
@@ -120,10 +155,6 @@ class ProductSeeder extends Seeder
             ["name" => "Small Water", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 1.30]])],
             ["name" => "Red Bull", "size" => serialize([["id" => 1, "name" => "Small", "size" => 250, "price" => 2.50]])],
             ["name" => "Monster original", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 2.99]])],
-//            ["name" => "", "size" => serialize([[]])],
-//            ["name" => "", "size" => serialize([[]])],
-//            ["name" => "", "size" => serialize([[]])],
-//            ["name" => "", "size" => serialize([[]])],
         ];
 
         foreach ($drinks as $drink) {
@@ -135,7 +166,7 @@ class ProductSeeder extends Seeder
                 'size' => $drink["size"] ?? null ,
                 'count' => 0,
                 'time' => 32,
-                'sub_title' => 'popular'
+                'sub_title' => null
             ]);
         }
 
