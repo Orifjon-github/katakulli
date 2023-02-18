@@ -131,7 +131,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 6,
                 'name' => $drink['name'] ?? "Drink",
                 'description' => 'description',
-                'image' => '/storage/products/ketchup.png',
+                'image' => '/storage/products/pepsi.png',
                 'size' => $drink["size"] ?? null ,
                 'count' => 0,
                 'time' => 32,
