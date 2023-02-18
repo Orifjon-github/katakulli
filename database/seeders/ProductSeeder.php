@@ -145,16 +145,16 @@ class ProductSeeder extends Seeder
         }
 
         $drinks = [
-            ["name" => "Coke", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Diet coke", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Fanta", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "7 Up", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Rubiko mango", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Dr Pepper", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Pepsi", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Small Water", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 1.30]])],
-            ["name" => "Red Bull", "size" => serialize([["id" => 1, "name" => "Small", "size" => 250, "price" => 2.50]])],
-            ["name" => "Monster original", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 2.99]])],
+            ["name" => "Coke", "image" => "/storage/products/drinks/cola.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Diet coke", "image" => "/storage/products/drinks/dietcola.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Fanta", "image" => "/storage/products/drinks/fanta.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "7 Up", "image" => "/storage/products/drinks/up7.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Rubicon mango", "image" => "/storage/products/drinks/rubico.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Dr Pepper", "image" => "/storage/products/drinks/pepper.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Pepsi", "image" => "/storage/products/drinks/pepsi.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Small Water", "image" => "/storage/products/drinks/water.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 1.30]])],
+            ["name" => "Red Bull", "image" => "/storage/products/drinks/redbull.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 250, "price" => 2.50]])],
+            ["name" => "Monster original", "image" => "/storage/products/drinks/monster.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 2.99]])],
         ];
 
         foreach ($drinks as $drink) {
@@ -162,7 +162,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 6,
                 'name' => $drink['name'] ?? "Drink",
                 'description' => 'description',
-                'image' => '/storage/products/pepsi.png',
+                'image' => $drink["image"] ?? '/storage/products/pepsi.png',
                 'size' => $drink["size"] ?? null ,
                 'count' => 0,
                 'time' => 32,
