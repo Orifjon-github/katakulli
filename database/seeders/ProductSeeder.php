@@ -146,10 +146,10 @@ class ProductSeeder extends Seeder
 
         $drinks = [
             ["name" => "Coke", "image" => "/storage/products/drinks/cola.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Diet coke", "image" => "/storage/products/drinks/dietcola.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Diet coke", "image" => "/storage/products/drinks/coladiet.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
             ["name" => "Fanta", "image" => "/storage/products/drinks/fanta.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
             ["name" => "7 Up", "image" => "/storage/products/drinks/up7.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
-            ["name" => "Rubicon mango", "image" => "/storage/products/drinks/rubico.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
+            ["name" => "Rubicon mango", "image" => "/storage/products/drinks/rubicon.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
             ["name" => "Dr Pepper", "image" => "/storage/products/drinks/pepper.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
             ["name" => "Pepsi", "image" => "/storage/products/drinks/pepsi.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 330, "price" => 1.50], ["id" => 2, "name" => "Large", "size" => 1.5, "price" => 2.50]])],
             ["name" => "Small Water", "image" => "/storage/products/drinks/water.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => 500, "price" => 1.30]])],
