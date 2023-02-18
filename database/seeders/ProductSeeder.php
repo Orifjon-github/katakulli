@@ -68,7 +68,7 @@ class ProductSeeder extends Seeder
         foreach ($lasagnas as $lasagna) {
            Product::create([
                 'category_id' => 2,
-                'name' => 'Venice Pizza',
+                'name' => $lasagna["name"] ?? "Lasagna",
                 'description' => 'description',
                 'image' => '/storage/products/product-1.png',
                 'size' => $lasagna["price"] ?? null,
