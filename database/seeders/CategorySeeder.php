@@ -28,12 +28,16 @@ class CategorySeeder extends Seeder
             'url' => '/storage/homepage/categories/doner.svg'
         ]);
         Category::create([
-            'name' => 'Vegetarian & Salad',
+            'name' => 'Vegetarian & Salads',
             'url' => '/storage/homepage/categories/vegetarian.svg'
         ]);
         Category::create([
-            'name' => 'Sous',
+            'name' => 'Sauces',
             'url' => '/storage/homepage/categories/sous.png'
+        ]);
+        Category::create([
+            'name' => 'Drinks',
+            'url' => '/storage/homepage/categories/drink.png'
         ]);
 
     }
