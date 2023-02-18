@@ -59,10 +59,10 @@ class ProductSeeder extends Seeder
         }
 
         $lasagnas = [
-            ["name" => "Vegetarian Lasagna", "price" => 7.99],
-            ["name" => "Beef Lasagna", "price" => 7.99],
-            ["name" => "Spaghetti Bolognese", "price" => 7.99],
-            ["name" => "Chicken Mushroom Pasta", "price" => 7.99]
+            ["name" => "Vegetarian Lasagna", "price" => serialize(["price" => 7.99])],
+            ["name" => "Beef Lasagna", "price" => serialize(["price" => 7.99])],
+            ["name" => "Spaghetti Bolognese", "price" => serialize(["price" => 7.99])],
+            ["name" => "Chicken Mushroom Pasta", "price" => serialize(["price" => 7.99])]
         ];
 
         foreach ($lasagnas as $lasagna) {
@@ -71,10 +71,10 @@ class ProductSeeder extends Seeder
                 'name' => 'Venice Pizza',
                 'description' => 'description',
                 'image' => '/storage/products/product-1.png',
-               'size' => $lasagna["price"] ?? null,
+                'size' => $lasagna["price"] ?? null,
                 'count' => 0,
                 'time' => 32,
-                'sub_title' => 'popular'
+                'sub_title' => null
             ]);
         }
 
