@@ -22,7 +22,29 @@ class ProductSeeder extends Seeder
             ["category_id" => 1, "name" => "Hawaiian Pizza", "description" => "Tomato sauce, mozzarella cheese, ham and pineapple"],
             ["category_id" => 1, "name" => "American Pizza", "description" => "Spicy Red onion, pepperoni, peppers and jalapeno"],
             ["category_id" => 1, "name" => "Beef Eater Pizza", "description" => "Spicy beef, red onion, and mushroom"],
-        ];
+            ["category_id" => 1, "name" => "Bbq Chicken Classic Pizza", "description" => "Bbq chicken, red onion, bacon and bbq sauce"],
+            ["category_id" => 1, "name" => "Chicken Supreme Pizza", "description" => "Plain chicken, mushroom, pepper and sweetcorn"],
+            ["category_id" => 1, "name" => "Pepperoni Lover Pizza", "description" => "Double cheese and double pepperoni"],
+            ["category_id" => 1, "name" => "Pepperoni Plus Pizza", "description" => "Red onion, mushroom and pepperoni"],
+            ["category_id" => 1, "name" => "Chicken Tandoori Pizza", "description" => "Chicken tandoori, mushroom, onion, jalapeno and fresh tomato"],
+            ["category_id" => 1, "name" => "Four Seasons Pizza", "description" => "Mushroom, pepperoni, ham and pepper"],
+            ["category_id" => 1, "name" => "Meat Feast Pizza", "description" => "Pepperoni, ham, spicy beef, bacon and smoked sausage"],
+            ["category_id" => 1, "name" => "Siciliano Pizza", "description" => "Ham, capers, anchovies, black olive, artichoke"],
+            ["category_id" => 1, "name" => "Classic Pizza", "description" => "Mushroom, bacon and fresh tomato"],
+            ["category_id" => 1, "name" => "Mexican Pizza", "description" => "Red onion, spicy beef, pepper and jalapeno"],
+            ["category_id" => 1, "name" => "Chicken Club Pizza", "description" => "Chicken tikka, red onion, bacon and fresh tomato"],
+            ["category_id" => 1, "name" => "Sausage and Pepperoni Pizza", "description" => "Pepperoni and smoked sausage"],
+            ["category_id" => 1, "name" => "Four Cheese Pizza", "description" => "Mozarella, parmesan, feta cheese and plain cheese"],
+            ["category_id" => 1, "name" => "Veggie Lover Pizza", "description" => "Mushroom, red onion, pepper, sweetcorn and fresh tomato"],
+            ["category_id" => 1, "name" => "Vegetarian Hot Pizza", "description" => "Mushroom, red onion, pepper, green chilli, jalapeno and fresh tomato"],
+            ["category_id" => 1, "name" => "Cheesy Delight Pizza", "description" => "Red onion, black olives, fresh tomatoes, feta cheese"],
+            ["category_id" => 1, "name" => "Seafood Pizza", "description" => "Tuna, prawns, anchovies and fresh tomato"],
+            ["category_id" => 1, "name" => "Spicy Pizza", "description" => "Red onion, spicy beef, pepperoni, chilli and jalapeno"],
+            ["category_id" => 1, "name" => "The Works Pizza", "description" => "Mushroom, ham, pepperoni, smoked sausage, black olives and peppers"],
+            ["category_id" => 1, "name" => "Build Your Own Pizza", "description" => "Any 4 Toppings"],
+//            ["category_id" => 1, "name" => "", "description" => ""],
+
+            ];
         foreach ($pizzas as $pizza) {
             Product::create([
                 'category_id' => $pizza["category_id"] ?? 1,
