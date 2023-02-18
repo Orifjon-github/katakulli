@@ -27,10 +27,10 @@ class CategorySeeder extends Seeder
             'name' => 'Lasagna',
             'url' => '/storage/homepage/categories/lasagna.png'
         ]);
-        Category::create([
-            'name' => 'Make it better',
-            'url' => '/storage/homepage/categories/better.png'
-        ]);
+//        Category::create([
+//            'name' => 'Make it better',
+//            'url' => '/storage/homepage/categories/better.png'
+//        ]);
         Category::create([
             'name' => 'Doners',
             'url' => '/storage/homepage/categories/doner.svg'
