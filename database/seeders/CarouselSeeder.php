@@ -16,19 +16,19 @@ class CarouselSeeder extends Seeder
     public function run()
     {
         Carousel::create([
-            'title' => "Example Title",
-            'image' => "/storage/homepage/banner/banner.png",
-            'price' => 5.05,
+            'title' => "Pepperoni Lover Pizza from £7.99 For Collection",
+            'image' => "/storage/products/product-1.png",
+            'price' => 7.99,
         ]);
         Carousel::create([
-            'title' => "Example Title",
-            'image' => "/storage/homepage/banner/banner.png",
-            'price' => 4.45,
+            'title' => "Sausage and Pepperoni Pizza from £7.99 For Collection",
+            'image' => "/storage/products/product-1.png",
+            'price' => 7.99,
         ]);
         Carousel::create([
-            'title' => "Example Title",
-            'image' => "/storage/homepage/banner/banner.png",
-            'price' => 8.15,
+            'title' => "Veggie Lover Pizza from £7.99 For Collection",
+            'image' => "/storage/products/product-1.png",
+            'price' => 7.99,
         ]);
     }
 }
