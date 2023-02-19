@@ -59,7 +59,7 @@ class ProductSeeder extends Seeder
         }
 
         $lasagnas = [
-            ["name" => "Vegetarian Lasagna", "price" => serialize([["id" => 1, "name" => "", "size" => "", "price" => 7.99]])],
+            ["name" => "Vegetarian Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
             ["name" => "Beef Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
             ["name" => "Spaghetti Bolognese", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
             ["name" => "Chicken Mushroom Pasta", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])]
