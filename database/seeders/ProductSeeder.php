@@ -51,7 +51,7 @@ class ProductSeeder extends Seeder
                 'name' => $pizza["name"] ?? "Pizza",
                 'description' => $pizza["description"] ?? "Very tasty",
                 'image' => $pizza["image"] ?? '/storage/products/product-1.png',
-                'size' => serialize([["id" => 1, "name" => "Small", "size" => "10 sm", "price" => 9.99], ["id" => 2, "name" => "Medium","size" => "12 sm", "price" => 12.99], ["id" => 3, "name" => "Large", "size" => "14 sm", "price" => 14.99], ["id" => 4, "name" => "Extra Large", "size" => "15 sm", "price" => 17.99]]),
+                'size' => serialize([["id" => 1, "name" => "Small", "size" => "10 inch", "price" => 9.99], ["id" => 2, "name" => "Medium","size" => "12 inch", "price" => 12.99], ["id" => 3, "name" => "Large", "size" => "14 inch", "price" => 14.99], ["id" => 4, "name" => "Extra Large", "size" => "15 inch", "price" => 17.99]]),
                 'count' => 0,
                 'time' => $pizza["time"] ?? 30,
                 'sub_title' => $pizza["sub_title"] ?? null
@@ -59,10 +59,10 @@ class ProductSeeder extends Seeder
         }
 
         $lasagnas = [
-            ["name" => "Vegetarian Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
-            ["name" => "Beef Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
-            ["name" => "Spaghetti Bolognese", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])],
-            ["name" => "Chicken Mushroom Pasta", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 7.99]])]
+            ["name" => "Vegetarian Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 7.99]])],
+            ["name" => "Beef Lasagna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 7.99]])],
+            ["name" => "Spaghetti Bolognese", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 7.99]])],
+            ["name" => "Chicken Mushroom Pasta", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 7.99]])]
         ];
 
         foreach ($lasagnas as $lasagna) {
@@ -79,22 +79,22 @@ class ProductSeeder extends Seeder
         }
 
         $betters = [
-            ["name" => "Cheesy Jalapeno Bites", "description" => "Breaded jalapeno and cheese 6pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Garlic Bread", "description" => "4pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 1.99]])],
-            ["name" => "Garlic Bread with Cheese", "description" => "4pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Cheesy Garlic Pizza Bread", "description" => "Topped with mozzarella, garlic, and butter sauce", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Bbq Chicken Wings", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" =>"10 sm", "price" => 3.99]])],
-            ["name" => "Large Portion of Chips", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 1.99]])],
-            ["name" => "Chilli Cheesy Bites", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Hot Wings", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Potato Wedges", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Curly Fries", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Onion Rings", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Garlic Mushrooms", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Mozzarella Sticks", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
-            ["name" => "Chicken Strips", "description" => "6pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" =>"10 sm", "price" => 4.99]])],
-            ["name" => "Bbq Lamb Ribs", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" =>"10 sm", "price" => 5.99]])],
-            ["name" => "Chicken nuggets", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 3.99]])],
+            ["name" => "Cheesy Jalapeno Bites", "description" => "Breaded jalapeno and cheese 6pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Garlic Bread", "description" => "4pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 1.99]])],
+            ["name" => "Garlic Bread with Cheese", "description" => "4pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Cheesy Garlic Pizza Bread", "description" => "Topped with mozzarella, garlic, and butter sauce", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Bbq Chicken Wings", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" =>null, "price" => 3.99]])],
+            ["name" => "Large Portion of Chips", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 1.99]])],
+            ["name" => "Chilli Cheesy Bites", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Hot Wings", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Potato Wedges", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Curly Fries", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Onion Rings", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Garlic Mushrooms", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Mozzarella Sticks", "description" => "8pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
+            ["name" => "Chicken Strips", "description" => "6pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 4.99]])],
+            ["name" => "Bbq Lamb Ribs", "description" => "", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 5.99]])],
+            ["name" => "Chicken nuggets", "description" => "10pcs", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 3.99]])],
         ];
 
         foreach ($betters as $better) {
@@ -111,12 +111,12 @@ class ProductSeeder extends Seeder
         }
 
         $salads = [
-            ["name" => "Mixed Salad", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Potato Salad", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Coleslaw", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 1.99]])],
-            ["name" => "Mixed Salad with Tuna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Mixed Salad with Ham", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
-            ["name" => "Mixed Salad with Feta and Olive Oil", "price" => serialize([["id" => 1, "name" => "Medium", "size" => "10 sm", "price" => 2.99]])],
+            ["name" => "Mixed Salad", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Potato Salad", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Coleslaw", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 1.99]])],
+            ["name" => "Mixed Salad with Tuna", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Mixed Salad with Ham", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
+            ["name" => "Mixed Salad with Feta and Olive Oil", "price" => serialize([["id" => 1, "name" => "Medium", "size" => null, "price" => 2.99]])],
         ];
 
         foreach ($salads as $salad) {
