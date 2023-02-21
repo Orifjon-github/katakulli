@@ -145,16 +145,16 @@ class ProductSeeder extends Seeder
         }
 
         $drinks = [
-            ["name" => "Coke", "image" => "/storage/products/drinks/cola.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Diet coke", "image" => "/storage/products/drinks/coladiet.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Fanta", "image" => "/storage/products/drinks/fanta.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "7 Up", "image" => "/storage/products/drinks/up7.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Rubicon mango", "image" => "/storage/products/drinks/rubicon.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Dr Pepper", "image" => "/storage/products/drinks/pepper.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Pepsi", "image" => "/storage/products/drinks/pepsi.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Large", "size" => "1.5 l", "price" => 2.50]])],
-            ["name" => "Small Water", "image" => "/storage/products/drinks/water.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "500 ml", "price" => 1.30]])],
-            ["name" => "Red Bull", "image" => "/storage/products/drinks/redbull.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "250 ml", "price" => 2.50]])],
-            ["name" => "Monster original", "image" => "/storage/products/drinks/monster.png", "size" => serialize([["id" => 1, "name" => "Small", "size" => "500 ml", "price" => 2.99]])],
+            ["name" => "Coke", "image" => "/storage/products/drinks/cola.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Diet coke", "image" => "/storage/products/drinks/coladiet.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Fanta", "image" => "/storage/products/drinks/fanta.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "7 Up", "image" => "/storage/products/drinks/up7.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Rubicon mango", "image" => "/storage/products/drinks/rubicon.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Dr Pepper", "image" => "/storage/products/drinks/pepper.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Pepsi", "image" => "/storage/products/drinks/pepsi.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "330 ml", "price" => 1.50], ["id" => 2, "name" => "Bottle", "size" => "1.5 l", "price" => 2.50]])],
+            ["name" => "Small Water", "image" => "/storage/products/drinks/water.png", "size" => serialize([["id" => 1, "name" => "Bottle", "size" => "500 ml", "price" => 1.30]])],
+            ["name" => "Red Bull", "image" => "/storage/products/drinks/redbull.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "250 ml", "price" => 2.50]])],
+            ["name" => "Monster original", "image" => "/storage/products/drinks/monster.png", "size" => serialize([["id" => 1, "name" => "Can", "size" => "500 ml", "price" => 2.99]])],
         ];
 
         foreach ($drinks as $drink) {
