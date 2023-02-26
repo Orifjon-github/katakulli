@@ -20,10 +20,5 @@ class LogoSeeder extends Seeder
             'place' => 'Header Logo',
             'url' => '/storage/homepage/setting/venice-logo.png'
         ]);
-        Logo::create([
-            'setting_id' => 1,
-            'place' => 'Footer Logo',
-            'url' => '/storage/homepage/setting/venice-logo.png'
-        ]);
     }
 }
