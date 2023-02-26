@@ -16,9 +16,8 @@ class AdvantageResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'num' => $this->num,
-            'title' => $this->title,
-            'url' => $this->url,
+            'text' => $this->text,
+            'icon' => $this->icon,
         ];
     }
 }

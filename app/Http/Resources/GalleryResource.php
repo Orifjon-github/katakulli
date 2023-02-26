@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CarouselResource extends JsonResource
+class GalleryResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,9 +16,10 @@ class CarouselResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'image' => $this->image,
-            'price' => $this->price
+            'name' => $this->name,
+            'price' => $this->price,
+            'count' => $this->count,
+            'image' => $this->image
         ];
     }
 }

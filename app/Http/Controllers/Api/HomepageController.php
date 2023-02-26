@@ -3,16 +3,16 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\AdditionalProductResource;
-use App\Http\Resources\CarouselResource;
+use App\Http\Resources\GalleryResource;
+use App\Http\Resources\HomepageResource;
 use App\Http\Resources\CategoryResource;
 use App\Http\Resources\ProductResource;
 use App\Http\Resources\SettingResource;
 use App\Http\Resources\SpecialProductResource;
 use App\Http\Resources\SpecialResource;
 use App\Http\Resources\TestimonialResource;
-use App\Models\AdditionalProduct;
-use App\Models\Carousel;
+use App\Models\Gallery;
+use App\Models\Homepage;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Settings\Setting;
@@ -65,35 +65,25 @@ class HomepageController extends Controller
             'data' => $products
         ]);
     }
-    public function specials(): JsonResponse
-    {
-        $specials = SpecialResource::collection(Special::all());
-        return response()->json([
-            'success' => true,
-            'code' => 200,
-            'message' => 'OK',
-            'data' => $specials
-        ]);
-    }
 
-    public function additionalProducts(): JsonResponse
+    public function gallery(): JsonResponse
     {
-        $additional_products = AdditionalProductResource::collection(AdditionalProduct::all());
+        $gallery = GalleryResource::collection(Gallery::all());
         return response()->json([
             'success' => true,
             'code' => 200,
             'message' => 'OK',
-            'data' => $additional_products
+            'data' => $gallery
         ]);
     }
-    public function carousels(): JsonResponse
+    public function homepage(): JsonResponse
     {
-        $carousels = CarouselResource::collection(Carousel::all());
+        $homepage = HomepageResource::collection(Homepage::all());
         return response()->json([
             'success' => true,
             'code' => 200,
             'message' => 'OK',
-            'data' => $carousels
+            'data' => $homepage
         ]);
     }
     public function popularRecipes(): JsonResponse

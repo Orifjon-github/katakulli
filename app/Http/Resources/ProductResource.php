@@ -20,11 +20,7 @@ class ProductResource extends JsonResource
             'name' => $this->name,
             'image' => $this->image,
             'description' => $this->description,
-            'time' => $this->time,
             'count' => $this->count,
-            'sizes' => unserialize($this->size),
-            'sub_title' => $this->sub_title,
-//            'sizes' => SizeResource::collection($this->sizes),
             ];
     }
 }

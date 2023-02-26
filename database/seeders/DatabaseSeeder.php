@@ -22,12 +22,11 @@ class DatabaseSeeder extends Seeder
            AdvantageSeeder::class,
            SocialSeeder::class,
            CategorySeeder::class,
-           CarouselSeeder::class,
-           SizeSeeder::class,
+           HomepageSeeder::class,
            ProductSeeder::class,
-           SpecialSeeder::class,
            TestimonialSeeder::class,
-           AdditionalProductSeeder::class,
+           GallerySeeder::class,
+           AboutSeeder::class
        ]);
     }
 }

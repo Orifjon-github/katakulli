@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('carousels', function (Blueprint $table) {
+        Schema::create('homepages', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
+            $table->string('title');
+            $table->text('sub_title');
             $table->text('image');
-            $table->float('price');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('carousels');
+        Schema::dropIfExists('homepages');
     }
 };

@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Settings\Logo;
+use App\Models\Homepage;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class LogoSeeder extends Seeder
+class HomepageSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,10 +15,10 @@ class LogoSeeder extends Seeder
      */
     public function run()
     {
-        Logo::create([
-            'setting_id' => 1,
-            'place' => 'Header Logo',
-            'url' => '/storage/homepage/setting/logo.png'
+        Homepage::create([
+            'title' => "KATAKULLI",
+            'sub_title' => "TURKISH RESTAURANT IN LONDON",
+            'image' => "/storage/homepage/homepage-background.jpg",
         ]);
     }
 }

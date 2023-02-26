@@ -16,28 +16,25 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'name' => 'Pizza',
-            'url' => '/storage/homepage/categories/pizza.svg'
+            'name' => 'Salads'
         ]);
         Category::create([
-            'name' => 'Lasagna',
-            'url' => '/storage/homepage/categories/lasagna.png'
+            'name' => 'Appetizers'
         ]);
         Category::create([
-            'name' => 'Make it better',
-            'url' => '/storage/homepage/categories/pizza.svg'
+            'name' => 'Soups'
         ]);
         Category::create([
-            'name' => 'Salad',
-            'url' => '/storage/homepage/categories/vegetarian.svg'
+            'name' => 'Bruschettas'
         ]);
         Category::create([
-            'name' => 'Sauce',
-            'url' => '/storage/homepage/categories/sous.png'
+            'name' => 'Fowl'
         ]);
         Category::create([
-            'name' => 'Drink',
-            'url' => '/storage/homepage/categories/drink.png'
+            'name' => 'Hot dishes'
+        ]);
+        Category::create([
+            'name' => 'Desserts'
         ]);
 
     }

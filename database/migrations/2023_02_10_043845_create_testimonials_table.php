@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('body');
-            $table->tinyInteger('rating')->nullable();
+            $table->string('published');
             $table->text('image')->nullable();
             $table->timestamps();
         });

@@ -19,10 +19,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->text('image')->nullable();
-            $table->text('size');
+            $table->float('price');
             $table->smallInteger('count')->default(0);
-            $table->smallInteger('time')->nullable();
-            $table->string('sub_title')->nullable();
             $table->timestamps();
         });
     }
