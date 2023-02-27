@@ -16,34 +16,19 @@ class GallerySeeder extends Seeder
     public function run()
     {
         Gallery::create([
-           'image' => '/storage/products/ketchup.png'
+           'image' => '/storage/homepage/gallery/image-1.jpg'
         ]);
         Gallery::create([
-           'image' => '/storage/products/ketchup.png'
+           'image' => '/storage/homepage/gallery/image-2.jpg'
         ]);
         Gallery::create([
-           'image' => '/storage/products/ketchup.png'
+           'image' => '/storage/homepage/gallery/image-3.jpg'
         ]);
         Gallery::create([
-            'image' => '/storage/products/ketchup.png'
+            'image' => '/storage/homepage/gallery/image-4.jpg'
         ]);
         Gallery::create([
-            'image' => '/storage/products/ketchup.png'
-        ]);
-        Gallery::create([
-            'image' => '/storage/products/ketchup.png'
-        ]);
-        Gallery::create([
-            'image' => '/storage/products/ketchup.png'
-        ]);
-        Gallery::create([
-            'image' => '/storage/products/ketchup.png'
-        ]);
-        Gallery::create([
-            'image' => '/storage/products/ketchup.png'
-        ]);
-        Gallery::create([
-            'image' => '/storage/products/ketchup.png'
+            'image' => '/storage/homepage/gallery/image-5.jpg'
         ]);
     }
 }
