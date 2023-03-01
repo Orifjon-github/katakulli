@@ -11,6 +11,7 @@ use App\Http\Resources\SettingResource;
 use App\Http\Resources\SpecialProductResource;
 use App\Http\Resources\SpecialResource;
 use App\Http\Resources\TestimonialResource;
+use App\Models\About;
 use App\Models\Gallery;
 use App\Models\Homepage;
 use App\Models\Category;
@@ -79,11 +80,12 @@ class HomepageController extends Controller
     public function homepage(): JsonResponse
     {
         $homepage = HomepageResource::collection(Homepage::all());
+        $about = About::first();
         return response()->json([
             'success' => true,
             'code' => 200,
             'message' => 'OK',
-            'data' => $homepage
+            'data' => ['homepage' => $homepage, 'about' => $about]
         ]);
     }
     public function popularRecipes(): JsonResponse

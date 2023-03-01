@@ -17,22 +17,22 @@ class AdvantageSeeder extends Seeder
         Advantage::create([
             'setting_id' => 1,
             'text' => 'capacity up to 80 people',
-            'icon' => '/storage/homepage/setting/advantage-1.svg'
+            'icon' => '/storage/homepage/setting/advantage-1.png'
         ]);
         Advantage::create([
             'setting_id' => 1,
             'text' => '2 separate zones for companies of 6-15 people',
-            'icon' => '/storage/homepage/setting/advantage-2.svg'
+            'icon' => '/storage/homepage/setting/advantage-2.png'
         ]);
         Advantage::create([
             'setting_id' => 1,
             'text' => 'live music from Friday to Sunday',
-            'icon' => '/storage/homepage/setting/advantage-3.svg'
+            'icon' => '/storage/homepage/setting/advantage-3.png'
         ]);
         Advantage::create([
             'setting_id' => 1,
             'text' => 'private parking',
-            'icon' => '/storage/homepage/setting/advantage-4.svg'
+            'icon' => '/storage/homepage/setting/advantage-4.png'
         ]);
     }
 }
