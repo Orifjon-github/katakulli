@@ -18,8 +18,10 @@ class ProductResource extends JsonResource
             'id' => $this->id,
             'category_id' => $this->category_id,
             'name' => $this->name,
-            'image' => $this->image,
-            'description' => $this->description,
+            'main_image' => $this->main_image,
+            'single_images' => unserialize($this->single_images),
+            'short_description' => $this->short_description,
+            'long_description' => $this->long_description,
             'count' => $this->count,
             ];
     }

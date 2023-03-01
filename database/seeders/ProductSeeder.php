@@ -19,36 +19,47 @@ class ProductSeeder extends Seeder
         Product::create([
             'category_id' => 1,
             'name' => "Salad “healthy summer”",
-            'description' => "Tomatoes, cucumbers, red onion, lettuce",
-            'image' => '/storage/products/product-1.jpg',
+            'main_image' => '/storage/products/product-1.jpg',
+            'single_images' => serialize([
+                'image_1' => '/storage/products/product-1.jpg'
+            ]),
+            'short_description' => "Tomatoes, cucumbers, red onion, lettuce",
+            'long_description' => "Tomatoes, cucumbers, red onion, lettuce (long description)",
             'price' => 788
         ]);
         Product::create([
             'category_id' => 1,
             'name' => "Salad “Camembert”",
-            'description' => "Tomatoes, microgreens, Camembert cheese",
-            'image' => '/storage/products/product-1.jpg',
+            'main_image' => '/storage/products/product-1.jpg',
+            'single_images' => serialize([
+                'image_1' => '/storage/products/product-1.jpg'
+            ]),
+            'short_description' => "Tomatoes, cucumbers, red onion, lettuce",
+            'long_description' => "Tomatoes, cucumbers, red onion, lettuce (long description)",
             'price' => 980
         ]);
+
         Product::create([
             'category_id' => 2,
             'name' => "Chicken Salad",
-            'description' => "Tomatoes, cucumbers, red onion, lettuce",
-            'image' => '/storage/products/product-1.jpg',
-            'price' => 788
-        ]);
-        Product::create([
-            'category_id' => 2,
-            'name' => "Salad “healthy summer”",
-            'description' => "Tomatoes, cucumbers, red onion, lettuce",
-            'image' => '/storage/products/product-1.jpg',
-            'price' => 788
-        ]);
-        Product::create([
+            'main_image' => '/storage/products/product-1.jpg',
+            'single_images' => serialize([
+                'image_1' => '/storage/products/product-1.jpg'
+            ]),
+            'short_description' => "Tomatoes, cucumbers, red onion, lettuce",
+            'long_description' => "Tomatoes, cucumbers, red onion, lettuce (long description)",
+            'price' => 878
+        ])
+
+        ;Product::create([
             'category_id' => 3,
-            'name' => "Salad “healthy summer”",
-            'description' => "Tomatoes, cucumbers, red onion, lettuce",
-            'image' => '/storage/products/product-1.jpg',
+            'name' => "Chicken Salad",
+            'main_image' => '/storage/products/product-1.jpg',
+            'single_images' => serialize([
+                'image_1' => '/storage/products/product-1.jpg'
+            ]),
+            'short_description' => "Tomatoes, cucumbers, red onion, lettuce",
+            'long_description' => "Tomatoes, cucumbers, red onion, lettuce (long description)",
             'price' => 788
         ]);
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\AboutResource;
 use App\Http\Resources\GalleryResource;
 use App\Http\Resources\HomepageResource;
 use App\Http\Resources\CategoryResource;
@@ -80,7 +81,7 @@ class HomepageController extends Controller
     public function homepage(): JsonResponse
     {
         $homepage = HomepageResource::collection(Homepage::all());
-        $about = About::first();
+        $about = AboutResource::collection(About::all());
         return response()->json([
             'success' => true,
             'code' => 200,

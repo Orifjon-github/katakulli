@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->text('text-1');
-            $table->text('text-2')->nullable();
-            $table->text('text-3')->nullable();
+            $table->text('short_text');
+            $table->longText('long_text');
             $table->text('image');
             $table->timestamps();
         });

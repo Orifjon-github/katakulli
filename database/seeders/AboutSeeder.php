@@ -16,8 +16,13 @@ class AboutSeeder extends Seeder
     public function run()
     {
         About::create([
-            'text-1' => "Lorem ipsum dolor sit amet consectetur. Nulla id viverra aenean libero. Odio netus enim arcu augue.",
-            'text-2' => "Porta quisque enim nunc tortor sed sed imperdiet. Nibh accumsan feugiat orci fames venenatis tellus lobortis.",
+            'short_text' => serialize([
+                'text_1' => "Lorem ipsum dolor sit amet consectetur. Nulla id viverra aenean libero. Odio netus enim arcu augue.",
+                'text_2' => "Porta quisque enim nunc tortor sed sed imperdiet. Nibh accumsan feugiat orci fames venenatis tellus lobortis.",
+            ]),
+            'long_text' => serialize([
+                'text_1' => 'Long Text'
+            ]),
             'image' => "storage/homepage/about.jpg"
         ]);
     }
