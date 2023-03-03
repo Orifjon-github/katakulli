@@ -16,8 +16,8 @@ class HomepageSeeder extends Seeder
     public function run()
     {
         Homepage::create([
-            'title' => "KATAKULLI",
-            'sub_title' => "TURKISH RESTAURANT IN LONDON",
+            'title' => "MOEANA",
+            'sub_title' => "TURKISH RESTAURANT IN ANDOVER",
             'image' => "/storage/homepage/homepage-background.jpg",
         ]);
     }
