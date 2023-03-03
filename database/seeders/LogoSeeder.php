@@ -18,7 +18,7 @@ class LogoSeeder extends Seeder
         Logo::create([
             'setting_id' => 1,
             'place' => 'Header Logo',
-            'url' => '/storage/homepage/setting/logo.png'
+            'url' => '/storage/homepage/setting/logo.svg'
         ]);
     }
 }
