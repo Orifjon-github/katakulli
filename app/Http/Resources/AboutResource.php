@@ -14,10 +14,23 @@ class AboutResource extends JsonResource
      */
     public function toArray($request)
     {
+
+        $short_text = [];
+        foreach (unserialize($this->short_text) as $text) {
+            $array = [];
+            $array['text'] = $text;
+            $short_text[] = $array;
+        }
+
+        $long_text = [];
+        foreach (unserialize($this->long_text) as $text) {
+            $array = [];
+            $array['text'] = $text;
+            $long_text[] = $array;
+        }
         return [
-            'id' => $this->id,
-            'short_text' => unserialize($this->short_text),
-            'long_text' => unserialize($this->long_text),
+            'short_text' => $short_text,
+            'long_text' => $long_text,
             'image' => $this->image
         ];
     }
